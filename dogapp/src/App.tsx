@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, Description } from "./styles/styled"
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+   <Description>
+    <ul>
+      This is a Dog App created with react js, using the Dog API.
+      The app uses:
+      <li>React js && Typescript</li>
+      <li>Redux for state management</li>
+      <li>Axios for fetching data</li>
+      <li>Styled components</li>
+      <li>Unit tests with jest and React Testing Library</li>
+    </ul>
+
+   </Description>
+    </Container>
+  )
 }
 
-export default App;
+export default App
