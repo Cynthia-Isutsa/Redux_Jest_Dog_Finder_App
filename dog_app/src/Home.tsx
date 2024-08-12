@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const users = useSelector((state: any) => state.users);
@@ -7,7 +8,7 @@ const Home = () => {
   return (
     <div className="container">
       <h2>Dog App here we come</h2>
-      <button className="btn btn-success my-3">Create +</button>
+      <Link className="btn btn-success my-3" to="/create">Create +</Link>
       <table className="table">
         <thead>
           <tr>
