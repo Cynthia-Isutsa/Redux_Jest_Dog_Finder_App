@@ -20,8 +20,8 @@ const Home = () => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user: any, index: any) => (
-            <tr key={index}>
+          {users.map((user: any) => (
+            <tr key={user.id}>
                 <td>{user?.id}</td>
                 <td>{user?.name}</td>
                 <td>{user?.email}</td>
